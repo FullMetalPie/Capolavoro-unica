@@ -1,22 +1,28 @@
+@font-face {
+  font-family: Rubik;
+  src: url(../Media/Font/Rubik-VariableFont_wght.ttf);
+}
+
 body {
     background-color: white;
     color: black;
-    font-family: sans-serif;
+    font-family: Rubik, sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 .divs {
     height: 100vh;
-    width: 99.9%;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
     border: 1px green solid;
 }
 
-#first-div {
+#main-div {
     align-items: center;
+    flex-direction: row;
 }
 
 #title {
@@ -26,16 +32,33 @@ body {
 }
 
 #portfolio {
-    font-size: 10vw;
+    font-size: 8vw;
 }
 
 #subtitle {
-    font-size: 5vw;
+    font-size: 4vw;
+    font-style: italic;
+}
+
+#about-div {
+
+}
+
+#projects-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.prev-nextButtons {
+  align-self: center;
+  justify-self: center;
+  position: sticky;
 }
 
 .wrapper-div{
     position: sticky; top: 0;
     background-color: pink;
+    overflow-y: hidden;
     overflow-x: hidden;
     display: flex;
     width: 100vw;
@@ -48,12 +71,11 @@ body {
   }
   
   .slide{
-     min-width: 100vw;
+     min-width: 99.9vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-  
   }
   .red{
     background-color: red;
