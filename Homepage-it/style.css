@@ -3,6 +3,11 @@
   src: url(../Media/Font/Rubik-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: Spartical;
+  src: url(../Media/Font/SparticalGraffitiLine_PERSONAL_USE_ONLY.otf);
+}
+
 body {
     background-color: white;
     color: black;
@@ -26,17 +31,19 @@ body {
 }
 
 #title {
-    border: 1px blue solid;
-    margin-left: 10%;
-    padding: 0;
+  font-size: 15vw;
+  font-family: Spartical;
 }
 
 #portfolio {
-    font-size: 8vw;
+  border: 1px blue solid;
+  margin-left: 10%;
+  padding: 0;
+    
 }
 
 #subtitle {
-    font-size: 4vw;
+    font-size: 2vw;
     font-style: italic;
 }
 
@@ -56,35 +63,23 @@ body {
 }
 
 .wrapper-div{
-    position: sticky; top: 0;
-    background-color: pink;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-  }
+  position: sticky; top: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
   
-  .invisidiv{
-    height: 100vh;
-    background-color: black;
-  }
-  
-  .slide{
-     min-width: 99.9vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .red{
-    background-color: red;
-  }
-  
-  .blue{  
-    background-color: blue;
-  }
-  
-  .green{
-    background-color: green;
-  }
+.invisidiv{
+  height: 100vh;
+  background-color: black;
+}
+
+.slide{
+    min-width: 99.9vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
